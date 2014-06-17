@@ -1,20 +1,72 @@
 <div data-role="view" id="view-all-activities" data-layout="default" class="activities-view" data-model="app.Activities">
+<!--Inicio-->
+	<div id="tab-inicio" data-role="view" data-title="Inicio">
+    	<div id="tab-inicio-fotos">ULTIMA FOTO<!--BOTON FOTOS--></div>
+    	<div id="tab-inicio-rrss">ULTIMO TWEET<!--BOTON TWITTER--></div>
+    	<div id="tab-inicio-ofertas">ULTIMA OFERTA<!--BOTON OFERTAS--></div>
+    	<div id="tab-inicio-estoy">ESTOY EN AMURA<!--BOTON ESTOY EN AMURA--></div>
+    	<footer><font color="black"><div><p>&copy; aerowi.es 2014</p></div></font></footer>
+	</div>
     <div data-role="header">
         <div data-role="navbar">
-            Activities
+            Inicio
             <a class="nav-button nav-button-back hide-text" data-align="left" data-role="backbutton" data-click="app.Activities.logout">Log out</a>
             <a class="nav-button nav-button-add hide-text" data-align="right" data-role="button" href="views/addActivityView.html">Add</a>
         </div>
     </div>
 
-    <ul id="activities-listview" data-style="inset" data-role="listview" data-template="activityTemplate"
+    <div data-role="footer">
+        <div data-role="tabstrip">
+            <a href="#tab-inicio" data-icon="home">Inicio</a>
+            <a href="#tab-fotos" data-icon="camera">Fotos</a>
+            <a href="#tab-rrss" data-icon="share">Redes</a>
+            <a href="#tab-ofertas" data-icon="cart">Ofertas</a>
+            <a href="#tab-estoy" data-icon="favorites">Estoy</a>
+        </div>
+    </div>
+    
+<!--    <ul id="activities-listview" data-style="inset" data-role="listview" data-template="activityTemplate"
         data-bind="source: activities"></ul>
     <p id="no-activities-span" hidden="hidden" class="no-items-msg">
         <b>You have no posts yet.</b><br /><br />Tap on the plus sign and share what's on your mind.
-    </p>
+    </p>-->
+
+
+<!--Fotos-->    
+	<div id="tab-fotos" data-role="view" data-title="Fotos">
+    	<div id="tab-fotos-explicacion">EXPLICACION<!--TEXTO EXPLICATIVO--></div>
+    	<div id="tab-fotos-menu">MENU FOTOS<!--MENU FOTOS--></div>
+    	<ul data-role="listview" data-style="inset" data-type="group"><li>
+    		<ul id="tab-fotos-fotos">FOTOS<!--MUESTRA LAS FOTOS--></ul>
+    	</li></ul>
+    	<footer><font color="black"><div><p>&copy; aerowi.es 2014</p></div></font></footer>
+	</div>
+
+<!--Redes Sociaes-->
+	<div id="tab-rrss" data-role="view" data-title="Redes">
+    	<div id="tab-rrss-tweets">TWEETS<!--BOTON TWEETS--></div>
+    	<div id="tab-rrss-facebook">FACEBOOK<!--BOTON FACEBOOK--></div>
+    	<div id="tab-rrss-comentar">COMENTAR<!--BOTON COMENTARIO--></div>
+    	<footer><font color="black"><div><p>&copy; aerowi.es 2014</p></div></font></footer>
+	</div>
+
+<!--Ofertas-->
+	<div id="tab-ofertas" data-role="view" data-title="Ofertas">
+	    <div id="tab-ofertas-lista">OFERTAS<!--LISTA OFERTAS--></div>
+    	<footer><font color="black"><div><p>&copy; aerowi.es 2014</p></div></font></footer>
+	</div>
+
+<!--Estoy-->
+	<div id="tab-estoy" data-role="view" data-title="Estoy">
+    	<div id="tab-estoy-foto">FOTO HOY<!--BOTON FOTO--></div>
+    	<div id="tab-estoy-oferta">OFERTA AHORA<!--BOTON OFERTA--></div>
+    	<div id="tab-estoy-sorteo">SORTEO<!--BOTON SORTEO--></div>
+    	<div id="tab-estoy-colorines">COLORINES<!--BOTON COLORINES--></div>
+    	<footer><font color="black"><div><p>&copy; aerowi.es 2014</p></div></font></footer>
+	</div>
 </div>
 
-<!-- Activities ListView Template -->
+<!-- Activities ListView Template
 <script type="text/x-kendo-template" id="activityTemplate">
     <div data-role="touch" data-bind="events: { tap: activitySelected }" class="cf">
         <div class="user-avatar">
@@ -27,3 +79,24 @@
         </div>
     </div>
 </script>
+
+    
+<!--Layout
+<div data-role="layout" data-id="tabstrip-layout">
+    <!--Header
+    <div data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+        </div>
+    </div>
+    <!--Footer
+    <div data-role="footer">
+        <div data-role="tabstrip">
+            <a href="#tab-inicio" data-icon="home">Inicio</a>
+            <a href="#tab-fotos" data-icon="camera">Fotos</a>
+            <a href="#tab-rrss" data-icon="add">Redes</a>
+            <a href="#tab-ofertas" data-icon="money">Ofertas</a>
+            <a href="#tab-estoy" data-icon="bookmarks">Estoy</a>
+        </div>
+    </div>
+</div>-->
