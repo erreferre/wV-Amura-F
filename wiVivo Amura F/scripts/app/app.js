@@ -48,7 +48,7 @@ var app = (function (win) {
     var onBackKeyDown = function(e) {
         e.preventDefault();
 
-        navigator.notification.confirm('Do you really want to exit?', function (confirmed) {
+        navigator.notification.confirm('Quieres salir realmente?', function (confirmed) {
             var exit = function () {
                 navigator.app.exitApp();
             };

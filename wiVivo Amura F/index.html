@@ -31,8 +31,8 @@
         <!--WELCOME VIEW -->
         <div data-role="view" id="welcome" data-layout="default" class="welcome-scrn form-view" data-model="app.Login" data-init="app.Login.init" data-show="app.Login.show">
             <div data-role="header"></div>
-            <h1 class="app-logo hide-text center-block">Telerik <small>DevCloud</small></h1>
-            <h2 class="app-name center-text">Friends <small>Sample Application</small></h2>
+            <h1 class="app-logo hide-text center-block">Amura <small>Café</small></h1>
+            <h2 class="app-name center-text">Amura <small>Café</small></h2>
             <form id="login-form">
                 <ul data-role="listview" data-style="inset">
                     <li class="username"><input type="text" id="loginUsername" placeholder="Username" required validationMessage="Username is required!" /></li>
@@ -47,24 +47,24 @@
                 </li>
                 <li class="oauth cf">
                     <span id="loginWithFacebook" class="oauth-item" data-role="touch" data-bind="events: { tap: loginWithFacebook }">
-                        <a data-role="button" class="btn btn-login-fb">Login with Facebook</a>
+                        <a data-role="button" class="btn btn-login-fb">Login con Facebook</a>
                     </span>
                     <span id="loginWithGoogle" class="oauth-item" data-role="touch" data-bind="events: { tap: loginWithGoogle }">
-                        <a data-role="button" class="btn btn-login-google">Login with Google</a>
+                        <a data-role="button" class="btn btn-login-google">Login con Google</a>
                     </span>
-                    <span id="loginWithLiveID" class="oauth-item" data-role="touch" data-bind="events: { tap: loginWithLiveID }">
+                    <!--<span id="loginWithLiveID" class="oauth-item" data-role="touch" data-bind="events: { tap: loginWithLiveID }">
                         <a data-role="button" class="btn btn-login-liveid">Login with Live ID</a>
                     </span>
                     <span id="loginWithADSF" class="oauth-item" data-role="touch" data-bind="events: { tap: loginWithADSF }">
                         <a data-role="button" class="btn btn-login-adsf">Login with ADSF</a>
-                    </span>
+                    </span>-->
                 </li>
                 <li class="signup">
-                    <a data-role="button" href="views/signupView.html" class="btn-signup">Don't have an account?</a>
+                    <a data-role="button" href="views/signupView.html" class="btn-signup">No tienes cuenta?</a>
                 </li>
             </ol>
 
-            <div data-role="footer"><p>&copy; <span data-bind="text: getYear"></span> Telerik Inc.</p></div>
+            <div data-role="footer"><p>&copy; <span data-bind="text: getYear"></span> aerowi.</p></div>
         </div>
     </body>
 </html>
